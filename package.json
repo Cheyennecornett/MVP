@@ -11,24 +11,24 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-runtime": "^6.26.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^16.0.1",
     "express": "^4.16.3",
+    "moment": "^2.29.4",
     "mongoose": "^5.2.1",
+    "mongoose-unique-validator": "^2.0.3",
     "morgan": "^1.9.0",
     "npm": "^6.1.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "styled-components": "^5.3.5",
     "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2",
-    "body-parser": "^1.19.0",
-    "dotenv": "^16.0.1",
-    "moment": "^2.29.4",
-    "styled-components": "^5.3.5"
+    "webpack-cli": "^3.1.2"
   },
-
-"scripts": {
-  "react:compile": "webpack -p --watch",
-  "start": "nodemon server/index.js"
-},
+  "scripts": {
+    "react:compile": "webpack -p --watch",
+    "start": "nodemon server/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Cheyennecornett/MVP.git"

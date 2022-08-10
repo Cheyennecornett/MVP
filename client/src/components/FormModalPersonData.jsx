@@ -5,9 +5,11 @@ const FormModal = ({setPersonFormModal}) => {
   return (
     <div className="modal">
 
+
       <Modalpop className="modal-pop" role="dialog" aria-modal="true">
 
         <form>
+         <h3>Let's Gather Some Basic Info!</h3>
           <label>First Name*</label><br></br>
           <input type="text" placeholder="Example: John" required="required" ></input>
 
@@ -41,17 +43,30 @@ const FormModal = ({setPersonFormModal}) => {
             required="required"></input><br></br><br></br>
 
 
+          <label>Foods I Want To Eat*</label><br></br>
+          <input type="text" placeholder="Example: Chicken, Potatoes, Milk"
+            required="required"></input><br></br><br></br>
 
 
+          <label>What Motivates Me?*</label><br></br>
+          <input type="text" placeholder="Example: Extra Time On Ipad, Playing Outside, New Toy, etc "
+            required="required"></input><br></br><br></br>
 
 
+          <label>Username*</label><br></br>
+          <input type="text" placeholder="Example: John1"
+            required="required" ></input><br></br><br></br>
 
+          <label>Password*</label><br></br>
+          <input type="text" placeholder="Example: password"
+            required="required" ></input><br></br><br></br>
 
         <input type="submit"></input><br></br><br></br>
         </form><br></br>
 
-        {/* <Button type="submit" >Register</Button> */}
-        <Button type="button" onClick={() => setPersonFormModal(false)}>Cancel</Button>
+       <div className="button-container">
+       <button type="register" onClick={() => setPersonFormModal(false)}>Cancel</button>
+       </div>
 
       </Modalpop>
       <ModalOverlay className="modal-overlay"></ModalOverlay>
@@ -70,9 +85,9 @@ export const Modalpop = styled.div
   border-radius: 5px;
   z-index: 999;
   width: 500px;
-  height: 600px;
+  height: 768px;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 450px;
   padding: 1em 2em 2em;
   position: relative;
 `
@@ -89,10 +104,10 @@ export const ModalOverlay = styled.div
   opacity: 0.75;
 `
 
-export const Button = styled.button
-  `margin: 10px;
+// export const Button = styled.button
+//   `margin: 10px;
 
-`
+// `
 
 
 

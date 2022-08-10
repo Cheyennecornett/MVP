@@ -14,8 +14,8 @@ app.use(express.static(path.join(__dirname, '../client/public')));
 const router = express.Router()
 const {getAll, addOne} = require('./controllers/personData.js')
 
-router.get('/personData', getAll);
-router.post('/personData', addOne);
+router.get('/', getAll);
+router.post('/', addOne);
 
 app.listen(process.env.PORT, () => {
   console.log(`Web server running on: http://localhost:${process.env.PORT}`);
