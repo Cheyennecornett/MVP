@@ -3,13 +3,16 @@ import axios from 'axios';
 import FormModal from './FormModalPersonData.jsx';
 
 
-function SignInPage() {
+
+
+function SignInPage(props) {
   const [personFormModal, setPersonFormModal] = useState(false);
   const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-
+  const logo =`https://res.cloudinary.com/dr8hijrgb/image/upload/v1660164805/Novus-logos_rmyicv.jpg`
    // User Login info
+
    const database = [
     {
       username: "user1",
@@ -44,6 +47,7 @@ function SignInPage() {
         setErrorMessages({ name: "pass", message: errors.pass });
       } else {
         setIsSubmitted(true);
+        props.setLoggedIn(true);
       }
     } else {
 
@@ -80,8 +84,9 @@ const renderForm = (
   return (
     <div className="app">
 
-       <h1>Novus</h1>
-       <h2>Together We Can Make A Difference</h2>
+
+       <img src={logo} className="logo"></img>
+       <h2> Try Something New</h2>
 
       {personFormModal && <FormModal setPersonFormModal={setPersonFormModal}/>}
       <div className="login-form">

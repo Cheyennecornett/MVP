@@ -23,13 +23,13 @@ personDataSchema.plugin(uniqueValidator);
 mongoose.set('setDefaultsOnInsert', true);
 
 const PersonData = mongoose.model('PersonData', personDataSchema);
- const test = new PersonData({FirstName: "cheyenne", LastName: "cornett", Email: "cheyenne.cornett22@gmail.com", Gender: "Female", FoodsEating: ["apple", "cheese"], FoodsWantToEat: ["chicken", "pasta"], Rewards: ["ipad time", "zoo"], Goals: ["eat more family meals"], Username: "shiba", Password: "nation"})
-test.save(function(err) {
-  if (err) {
-    console.log('err saving', err)
-  } else {
-    console.log('saved personData to db!')
-  }
-})
+//  const test = new PersonData({FirstName: "cheyenne", LastName: "cornett", Email: "cheyenne.cornett22@gmail.com", Gender: "Female", FoodsEating: ["apple", "cheese"], FoodsWantToEat: ["chicken", "pasta"], Rewards: ["ipad time", "zoo"], Goals: ["eat more family meals"], Username: "shiba", Password: "nation"})
+// test.save(function(err) {
+//   if (err) {
+//     console.log('err saving', err)
+//   } else {
+//     console.log('saved personData to db!')
+//   }
+// })
 module.exports = PersonData;
 

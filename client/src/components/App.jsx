@@ -2,12 +2,13 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import SignInPage from './SignInPage.jsx'
 import FormModal from './FormModalPersonData.jsx';
+import Dashboard from './Dashboard.jsx'
 
 
 function App() {
 
   const [data, setData] = useState('');
-
+  const [loggedIn, setLoggedIn] = useState(false);
 
   // useEffect(() => {
   //    getData();
@@ -24,11 +25,11 @@ function App() {
 
 
   return (
-    <div className="app">
+    <div className="appp">
 
-      {/* <SignInPage/> */}
-      <div row={0} col={0} sizeX={4} sizeY={3} content="<div class='panel-content'>Content Area</div>" header="<div class='e-header-text'>Header Area</div><div class='header-border'></div>">
-                </div>
+     {!loggedIn && <SignInPage setLoggedIn={setLoggedIn}/>}
+     {loggedIn && <Dashboard/>}
+
     </div>
   )
 }
