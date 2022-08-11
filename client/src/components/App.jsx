@@ -9,6 +9,7 @@ function App() {
 
   const [data, setData] = useState('');
   const [loggedIn, setLoggedIn] = useState(false);
+  const [user, setUser] = useState('')
 
   // useEffect(() => {
   //    getData();
@@ -27,9 +28,9 @@ function App() {
   return (
     <div className="appp">
 
-     {/* {!loggedIn && <SignInPage setLoggedIn={setLoggedIn}/>} */}
-     {/* {loggedIn && <Dashboard/>} */}
-    <Dashboard2/>
+     {!loggedIn && <SignInPage setLoggedIn={setLoggedIn} setUser={setUser}/>}
+
+    {loggedIn && <Dashboard2 setUser={setUser} user={user}/>}
     </div>
   )
 }

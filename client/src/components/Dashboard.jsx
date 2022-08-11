@@ -38,7 +38,7 @@ function Dashboard(props) {
     <li>Apple</li>
     <li>Pizza</li>
 
-    <div>
+    <div className="foodWork">
     <p>Foods I'm Working Towards</p>
     <li>Chicken Nuggets</li>
     </div>

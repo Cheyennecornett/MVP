@@ -1,6 +1,6 @@
 const PersonData = require('../../db/models/PersonData.js');
 
-exports.getAll = (req, res) => {
+exports.getAllPersonData = (req, res) => {
   PersonData.find({}).then((people) => {
     console.log(people)
     res.send(people);
@@ -8,7 +8,7 @@ exports.getAll = (req, res) => {
 }
 
 
-exports.addOne = (req, res) => {
+exports.addOnePerson = (req, res) => {
   console.log('post', req.body)
 
   const newPersonData = new PersonData (req.body);

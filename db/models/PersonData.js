@@ -28,7 +28,7 @@ const PersonData = mongoose.model('PersonData', personDataSchema);
 //   if (err) {
 //     console.log('err saving', err)
 //   } else {
-//     console.log('saved personData to db!')
+//     console.log('saved personData to db!', test)
 //   }
 // })
 module.exports = PersonData;

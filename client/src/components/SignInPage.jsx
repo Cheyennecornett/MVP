@@ -48,6 +48,7 @@ function SignInPage(props) {
       } else {
         setIsSubmitted(true);
         props.setLoggedIn(true);
+        props.setUser(userData.username)
       }
     } else {
 
