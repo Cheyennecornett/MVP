@@ -3,7 +3,7 @@ import axios from 'axios';
 import SignInPage from './SignInPage.jsx'
 import FormModal from './FormModalPersonData.jsx';
 import Dashboard from './Dashboard.jsx'
-
+import Dashboard2 from './Dashboard2.jsx'
 
 function App() {
 
@@ -29,7 +29,7 @@ function App() {
 
      {/* {!loggedIn && <SignInPage setLoggedIn={setLoggedIn}/>} */}
      {/* {loggedIn && <Dashboard/>} */}
-    <Dashboard/>
+    <Dashboard2/>
     </div>
   )
 }

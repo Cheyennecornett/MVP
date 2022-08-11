@@ -30,10 +30,18 @@ function Dashboard(props) {
 
     <header className="user-data">
       <p className="user-header">Points: 1 </p>
-
+      <p classname="user-feed-post">Current Goals</p>
     </header>
     <p>Welcome to Novus. This App is made to help children with ARFID track daily food interactions and to assist Dietians during treatment. This App will be HIPAA Compliant. </p>
-    <p>TESTTTTTT</p>
+
+    <p>Foods I'm Eating</p>
+    <li>Apple</li>
+    <li>Pizza</li>
+
+    <div>
+    <p>Foods I'm Working Towards</p>
+    <li>Chicken Nuggets</li>
+    </div>
 
   </article>
 
@@ -41,9 +49,9 @@ function Dashboard(props) {
     <header className="user-data">
     <p className="user-feed-post">Add New Entry</p>
     </header>
-    <p>FEED</p>
-  </article>
 
+  </article>
+  <article></article>
 
 
 
