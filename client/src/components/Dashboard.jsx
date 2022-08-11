@@ -27,18 +27,31 @@ function Dashboard(props) {
   </nav>
 
   <article>
-    <h1>User Stats?</h1>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+
+    <header className="user-data">
+      <p className="user-header">Points: 1 </p>
+
+    </header>
+    <p>Welcome to Novus. This App is made to help children with ARFID track daily food interactions and to assist Dietians during treatment. This App will be HIPAA Compliant. </p>
+    <p>TESTTTTTT</p>
 
   </article>
+
+  <article>
+    <header className="user-data">
+    <p className="user-feed-post">Add New Entry</p>
+    </header>
+    <p>FEED</p>
+  </article>
+
+
 
 
 </section>
 
-<footer>
+{/* <footer>
   <p>Footer</p>
-</footer>
+</footer> */}
 
 </div>
   )

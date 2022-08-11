@@ -27,9 +27,9 @@ function App() {
   return (
     <div className="appp">
 
-     {!loggedIn && <SignInPage setLoggedIn={setLoggedIn}/>}
-     {loggedIn && <Dashboard/>}
-
+     {/* {!loggedIn && <SignInPage setLoggedIn={setLoggedIn}/>} */}
+     {/* {loggedIn && <Dashboard/>} */}
+    <Dashboard/>
     </div>
   )
 }

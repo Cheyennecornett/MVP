@@ -86,7 +86,7 @@ const renderForm = (
 
 
        <img src={logo} className="logo"></img>
-       <h2> Try Something New</h2>
+       <h2> Something Catchy </h2>
 
       {personFormModal && <FormModal setPersonFormModal={setPersonFormModal}/>}
       <div className="login-form">
